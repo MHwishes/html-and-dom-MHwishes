@@ -14,7 +14,6 @@ function buildGrade() {
     buildTotalGrade(grade1, grade2, grade3, grade4);
 }
 
-//验证基本信息
 function getInformation(information) {
 
     return document.getElementById(information).value;
@@ -22,29 +21,29 @@ function getInformation(information) {
 
 function checkTestInformation() {
     var info１ = getInformation("class");
+
     if (info１ === '') {
         alert("请填写班级信息!!");
     }
-
     var info2 = getInformation("sno");
+
     if (info2 === '') {
         alert("请填写学号信息!!");
     }
-
     var info3 = getInformation("name");
+
     if (info3 === '') {
         alert("请填写姓名信息!!");
     }
-
 }
-//填空题得分
+
 function buildCompletionGrade() {
     var grade = 0;
 
     var answer1 = getInformation("11");
     if (answer1 === '统一建模语言')
         grade += 1;
-    
+
     var answer2 = getInformation("12");
     if (answer2 === '封装')
         grade += 1;
@@ -59,7 +58,7 @@ function buildCompletionGrade() {
 
     return grade;
 }
-//单选题得分
+
 function buildSingleAnswer(information) {
     for (var i = 0; i < information.length; i++) {
         if (information[i].checked)
@@ -80,7 +79,7 @@ function buildSingleChoiceGrade() {
 
     return grade;
 }
-//多选题得分
+
 function buildMultipleAnswers(answers) {
     var values = '';
     for (var i = 0; i < answers.length; i++) {
@@ -106,7 +105,7 @@ function buildMultipleChoiceGrade() {
 
     return grade;
 }
-//判断题得分
+
 function buildJudgmentGrade() {
     var grade = 0;
     var radio1 = document.getElementsByName("panswer1");
