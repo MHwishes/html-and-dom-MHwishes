@@ -12,45 +12,48 @@
     <h1 align="center">统一建模语言理论测试</h1>
 </header>
 
-<div>
+<section>
     <form>
-        <lable for="考试科目">考试科目:</lable>
+        考试科目：
         <output><U> 统 一 建 模 语 言 </U></output>
-
-        <lable for="时间">时间:</lable>
+        时间：
         <output><u> 100 分 钟 </u></output>
 
-        <lable for="得分">得分:</lable>
+        <label for="总分">得分:</label>
         <output id="总分"><u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</u></output>
 
         <br>
-        <lable for="班级">班级</lable>
+        <label for="class">班级</label>
         <input id='class' type="text" name="班级" title="班级"/>
 
-        <lable for="学号">学号:</lable>
+        <label for="sno">学号:</label>
         <input id='sno' type="text" name="学号" title="学号"/>
 
-        <lable for="姓名">姓名:</lable>
+        <label for="name">姓名:</label>
         <input id='name' type="text" name="姓名" title="姓名"/>
 
     </form>
-</div>
+</section>
 
-<div>
-    <h3>一.填空题</h3>
+<section>
+    <header>
+        <h3>一.填空题</h3>
+    </header>
     <form>
-        <lable for="1. UML 的中文全称是">1. UML 的中文全称是:</lable>
-        <input type="text" name="1. UML 的中文全称是" id="11" 　title="11"/>
+        1. UML 的中文全称是:
+        <input type="text" name="1. UML 的中文全称是" id="11"/>
         <br>
-        <lable for="2. 对象最突出的特征是:">2. 对象最突出的特征是:</lable>
-        <input type="text" name="2. 对象最突出的特征是:" id="12" title="12"/>，
-        <input type="text" name="2. 对象最突出的特征是:" id="13" title="13"/>，
-        <input type="text" name="2. 对象最突出的特征是:" id="14" title="14"/>
+        2. 对象最突出的特征是:
+        <input type="text" name="2. 对象最突出的特征是:" id="12"/>，
+        <input type="text" name="2. 对象最突出的特征是:" id="13"/>，
+        <input type="text" name="2. 对象最突出的特征是:" id="14"/>
     </form>
-</div>
+</section>
 
-<div>
-    <h3>二.选择题</h3>
+<section>
+    <header>
+        <h3>二.选择题</h3>
+    </header>
     <form name="form2">
         <p>1.UML 与软件工程的关系是:</p>
         <input type="radio" name="answer1" value="A" id="1A" title="A"/> UML 就是软件工程
@@ -70,10 +73,13 @@
         <br>
         <input type="radio" name="answer2" value="D" title="D"/> 单继承和多继承都不支持
     </form>
-</div>
+</section>
 
-<div>
-    <h3>三.多选题</h3>
+
+<section>
+    <header>
+        <h3>三.多选题</h3>
+    </header>
     <form>
         <p>1. 用例的粒度分为以下哪三种。</p>
         <input type="checkbox" name="answer3" value="A" title="A"/>概述级
@@ -85,22 +91,20 @@
         <input type="checkbox" name="answer3" value="D" title="D"/>子功能级
 
         <p>2. 类图由以下哪三部分组成。</p>
-        <input type="checkbox" name="answer4" value="A" title="A"/>
-        名称(Name)
+        <input type="checkbox" name="answer4" value="A" title="A"/>名称(Name)
         <br>
-        <input type="checkbox" name="answer4" value="B" title="B"/>
-        属性(Attribute)
+        <input type="checkbox" name="answer4" value="B" title="B"/>属性(Attribute)
         <br>
-        <input type="checkbox" name="answer4" value="C" title="C"/>
-        操作(Operation)
+        <input type="checkbox" name="answer4" value="C" title="C"/>操作(Operation)
         <br>
-        <input type="checkbox" name="answer4" value="D" title="D"/>
-        方法(Function)
+        <input type="checkbox" name="answer4" value="D" title="D"/>方法(Function)
     </form>
-</div>
+</section>
 
-<div>
-    <h3>四.判断题</h3>
+<section>
+    <header>
+        <h3>四.判断题</h3>
+    </header>
     <from>
         <p>1. 用例图只是用于和客户交流和沟通的,用于确定需求。</p>
         <input type="radio" name="panswer1" value="correct" title="correct"/> 正确
@@ -111,13 +115,15 @@
         <input type="radio" name="panswer2" value="wrong" title="wrong"/> 错误
 
     </from>
-</div>
+</section>
 
-<div>
-    <h3>五.简 答 题 ( 每 题 4 分 , 共 20 分 )</h3>
+<section>
+    <header>
+        <h3>五.简 答 题 ( 每 题 4 分 , 共 20 分 )</h3>
+    </header>
     <p>1. 简述什么是模型以及模型的表现形式?</p>
     <textarea rows="10" cols="50"></textarea>
-</div>
+</section>
 
 <footer>
     <br>
