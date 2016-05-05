@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>统一建模语言理论测试</title>
+    <script src="UML_grade.js" type="text/javascript"></script>
+</head>
+<p>
+    <header>西安软件服务外包学院
+        <hr>
+        <h1 align="center">统一建模语言理论测试</h1>
+    </header>
+
+<div>
+    <form>
+        <lable for="考试科目">考试科目:</lable>
+        <output><U> 统 一 建 模 语 言 </U></output>
+
+        <lable for="时间">时间:</lable>
+        <output><u> 100 分 钟 </u></output>
+
+        <lable for="得分">得分:</lable>
+        <output id="总分"><u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</u></output>
+
+        <br>
+        <lable for="班级">班级</lable>
+        <input id='class' type="text" name="班级" title="班级"/>
+
+        <lable for="学号">学号:</lable>
+        <input id='sno' type="text" name="学号" title="学号"/>
+
+        <lable for="姓名">姓名:</lable>
+        <input id='name' type="text" name="姓名" title="姓名"/>
+
+    </form>
+</div>
+
+<div>
+    <h3>一.填空题</h3>
+    <form>
+        <lable for="1. UML 的中文全称是">1. UML 的中文全称是:</lable>
+        <input type="text" name="1. UML 的中文全称是" id="11" 　title="11"/>
+        <br>
+        <lable for="2. 对象最突出的特征是:">2. 对象最突出的特征是:</lable>
+        <input type="text" name="2. 对象最突出的特征是:" id="12" title="12"/>，
+        <input type="text" name="2. 对象最突出的特征是:" id="13" title="13"/>，
+        <input type="text" name="2. 对象最突出的特征是:" id="14" title="14"/>
+    </form>
+</div>
+
+<div>
+    <h3>二.选择题</h3>
+    <form name="form2">
+        <p>1.UML 与软件工程的关系是:</p>
+        <input type="radio" name="answer1" value="A" id="1A" title="A"/> UML 就是软件工程
+        <br>
+        <input type="radio" name="answer1" value="B" id="1B" title="B"/> UML 参与到软件工程中软件开发过程的几个阶段
+        <br>
+        <input type="radio" name="answer1" value="C" id="1C" title="C"/> UML 与软件工程无关
+        <br>
+        <input type="radio" name="answer1" value="D" id="1D" title="D"/> UML 是软件工程的一部分
+
+        <p>2.Java 语言支持:</p>
+        <input type="radio" name="answer2" value="A" title="A"/> 单继承
+        <br>
+        <input type="radio" name="answer2" value="B" title="B"/> 多继承
+        <br>
+        <input type="radio" name="answer2" value="C" title="C"/> 单继承和多继承都支持
+        <br>
+        <input type="radio" name="answer2" value="D" title="D"/> 单继承和多继承都不支持
+    </form>
+</div>
+
+<div>
+    <p>
+    <h3>三.多选题</h3></p>
+    <form>
+        <p>1. 用例的粒度分为以下哪三种。</p>
+        <input type="checkbox" name="answer3" value="A" title="A"/>概述级
+        <br>
+        <input type="checkbox" name="answer3" value="B" title="B"/>需求级
+        <br>
+        <input type="checkbox" name="answer3" value="C" title="C"/>用户目标级
+        <br>
+        <input type="checkbox" name="answer3" value="D" title="D"/>子功能级
+
+        <p>2. 类图由以下哪三部分组成。</p>
+        <input type="checkbox" name="answer4" value="A" title="A"/>
+        名称(Name)
+        <br>
+        <input type="checkbox" name="answer4" value="B" title="B"/>
+        属性(Attribute)
+        <br>
+        <input type="checkbox" name="answer4" value="C" title="C"/>
+        操作(Operation)
+        <br>
+        <input type="checkbox" name="answer4" value="D" title="D"/>
+        方法(Function)
+    </form>
+</div>
+
+<div>
+    　　<p>
+    <h3>四.判断题</h3></p>
+    　　　
+    <from>
+        <p>1. 用例图只是用于和客户交流和沟通的,用于确定需求。</p>
+        <input type="radio" name="panswer1" value="correct" title="correct"/> 正确
+        　<input type="radio" name="panswer1" value="wrong" title="wrong"/> 错误
+        　<br>
+        <p>2. 在状态图中,终止状态在一个状态图中允许有任意多个。</p>
+        <input type="radio" name="panswer2" value="correct" title="correct"/> 正确
+        　<input type="radio" name="panswer2" value="wrong" title="wrong"/> 错误
+
+    </from>
+</div>
+
+<div>
+    　　<p>
+    <h3>五.简 答 题 ( 每 题 4 分 , 共 20 分 )</h3></p>
+    <p>1. 简述什么是模型以及模型的表现形式?</p>
+    <textarea rows="10" cols="50"></textarea>
+</div>
+
+<footer>
+    <br>
+    <button type="button" id="submit">我要交卷</button>
+</footer>
+
+</body>
+
+</html>
