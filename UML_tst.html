@@ -31,81 +31,99 @@
 
 <section>
     <h3>一.填空题</h3>
-    <li>
-        1. UML 的中文全称是:
-        <input type="text" name="1. UML 的中文全称是" id="11"/>
-    </li>
-    <li>
-        2. 对象最突出的特征是:
-        <input type="text" name="2. 对象最突出的特征是:" id="12"/>，
-        <input type="text" name="2. 对象最突出的特征是:" id="13"/>，
-        <input type="text" name="2. 对象最突出的特征是:" id="14"/>
-    </li>
+    <ol>
+        <li>
+            UML 的中文全称是:
+            <input type="text" name="1. UML 的中文全称是" id="11"/>
+        </li>
+        <li>
+            对象最突出的特征是:
+            <input type="text" name="2. 对象最突出的特征是:" id="12"/>，
+            <input type="text" name="2. 对象最突出的特征是:" id="13"/>，
+            <input type="text" name="2. 对象最突出的特征是:" id="14"/>
+        </li>
     </ol>
 </section>
 
 <section>
     <h3>二.选择题</h3>
     <form name="form2">
-        <p>1.UML 与软件工程的关系是:</p>
-        <input type="radio" name="answer1" value="A" id="1A" title="A"/> UML 就是软件工程
-        <br>
-        <input type="radio" name="answer1" value="B" id="1B" title="B"/> UML 参与到软件工程中软件开发过程的几个阶段
-        <br>
-        <input type="radio" name="answer1" value="C" id="1C" title="C"/> UML 与软件工程无关
-        <br>
-        <input type="radio" name="answer1" value="D" id="1D" title="D"/> UML 是软件工程的一部分
-
-        <p>2.Java 语言支持:</p>
-        <input type="radio" name="answer2" value="A" title="A"/> 单继承
-        <br>
-        <input type="radio" name="answer2" value="B" title="B"/> 多继承
-        <br>
-        <input type="radio" name="answer2" value="C" title="C"/> 单继承和多继承都支持
-        <br>
-        <input type="radio" name="answer2" value="D" title="D"/> 单继承和多继承都不支持
+        <ol>
+            <li>
+                <p>UML 与软件工程的关系是:</p>
+                <input type="radio" name="answer1" value="A" id="1A" title="A"/> UML 就是软件工程
+                <br>
+                <input type="radio" name="answer1" value="B" id="1B" title="B"/> UML 参与到软件工程中软件开发过程的几个阶段
+                <br>
+                <input type="radio" name="answer1" value="C" id="1C" title="C"/> UML 与软件工程无关
+                <br>
+                <input type="radio" name="answer1" value="D" id="1D" title="D"/> UML 是软件工程的一部分
+            </li>
+            <li>
+                <p>Java 语言支持:</p>
+                <input type="radio" name="answer2" value="A" title="A"/> 单继承
+                <br>
+                <input type="radio" name="answer2" value="B" title="B"/> 多继承
+                <br>
+                <input type="radio" name="answer2" value="C" title="C"/> 单继承和多继承都支持
+                <br>
+                <input type="radio" name="answer2" value="D" title="D"/> 单继承和多继承都不支持
+            </li>
+        </ol>
     </form>
 </section>
 
 <section>
     <h3>三.多选题</h3>
-
-    <p>1. 用例的粒度分为以下哪三种。</p>
-    <input type="checkbox" name="answer3" value="A" title="A"/>概述级
-    <br>
-    <input type="checkbox" name="answer3" value="B" title="B"/>需求级
-    <br>
-    <input type="checkbox" name="answer3" value="C" title="C"/>用户目标级
-    <br>
-    <input type="checkbox" name="answer3" value="D" title="D"/>子功能级
-
-    <p>2. 类图由以下哪三部分组成。</p>
-    <input type="checkbox" name="answer4" value="A" title="A"/>名称(Name)
-    <br>
-    <input type="checkbox" name="answer4" value="B" title="B"/>属性(Attribute)
-    <br>
-    <input type="checkbox" name="answer4" value="C" title="C"/>操作(Operation)
-    <br>
-    <input type="checkbox" name="answer4" value="D" title="D"/>方法(Function)
-
+    <ol>
+        <li>
+            <p>用例的粒度分为以下哪三种。</p>
+            <input type="checkbox" name="answer3" value="A" title="A"/>概述级
+            <br>
+            <input type="checkbox" name="answer3" value="B" title="B"/>需求级
+            <br>
+            <input type="checkbox" name="answer3" value="C" title="C"/>用户目标级
+            <br>
+            <input type="checkbox" name="answer3" value="D" title="D"/>子功能级
+        </li>
+        <li>
+            <p> 类图由以下哪三部分组成。</p>
+            <input type="checkbox" name="answer4" value="A" title="A"/>名称(Name)
+            <br>
+            <input type="checkbox" name="answer4" value="B" title="B"/>属性(Attribute)
+            <br>
+            <input type="checkbox" name="answer4" value="C" title="C"/>操作(Operation)
+            <br>
+            <input type="checkbox" name="answer4" value="D" title="D"/>方法(Function)
+        </li>
+    </ol>
 </section>
 
 <section>
     <h3>四.判断题</h3>
-    <p>1. 用例图只是用于和客户交流和沟通的,用于确定需求。</p>
-    <input type="radio" name="panswer1" value="correct" title="correct"/> 正确
-    <input type="radio" name="panswer1" value="wrong" title="wrong"/> 错误
-    　<br>
-    <p>2. 在状态图中,终止状态在一个状态图中允许有任意多个。</p>
-    <input type="radio" name="panswer2" value="correct" title="correct"/> 正确
-    <input type="radio" name="panswer2" value="wrong" title="wrong"/> 错误
+    <ol>
+        <li>
+            <p>用例图只是用于和客户交流和沟通的,用于确定需求。</p>
+            <input type="radio" name="panswer1" value="correct" title="correct"/> 正确
+            <input type="radio" name="panswer1" value="wrong" title="wrong"/> 错误
+        </li>
+        <li>
+            <p>在状态图中,终止状态在一个状态图中允许有任意多个。</p>
+            <input type="radio" name="panswer2" value="correct" title="correct"/> 正确
+            <input type="radio" name="panswer2" value="wrong" title="wrong"/> 错误
+        </li>
+    </ol>
 
 </section>
 
 <section>
     <h3>五.简 答 题 ( 每 题 4 分 , 共 20 分 )</h3>
-    <p>1. 简述什么是模型以及模型的表现形式?</p>
-    <textarea rows="7" cols="50" id="51"></textarea>
+    <ol>
+        <li>
+            <p>简述什么是模型以及模型的表现形式?</p>
+            <textarea rows="7" cols="50" id="51"></textarea>
+        </li>
+    </ol>
 </section>
 
 <footer>
