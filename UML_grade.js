@@ -11,7 +11,8 @@ function buildGrade() {
     var grade2 = buildSingleChoiceGrade();
     var grade3 = buildMultipleChoiceGrade();
     var grade4 = buildJudgmentGrade();
-    buildTotalGrade(grade1, grade2, grade3, grade4);
+    var grade5 = buildShortAnswersGrade();
+    buildTotalGrade(grade1, grade2, grade3, grade4, grade5);
 }
 
 function getInformation(information) {
@@ -125,10 +126,22 @@ function buildJudgmentGrade() {
     return grade;
 }
 
-function buildTotalGrade(grade1, grade2, grade3, grade4) {
-    var grade = grade1 + grade2 + grade3 + grade4;
+function buildShortAnswersGrade() {
+    var grade = 0;
+    var answers = "模型是对现实世界的简化和抽象,模型是对所研究的系统、过程、事物或概念的一种表达形式." +
+        "可以是物理实体;可以是某种图形;或者是一种数学表达式.";
 
-    alert("亲,除简答题外您的成绩是：" + grade + "分！");
+    if (answers === getInformation(51)) {
+        grade += 5;
+    }
+
+    return grade;
+}
+
+function buildTotalGrade(grade1, grade2, grade3, grade4, grade5) {
+    var grade = grade1 + grade2 + grade3 + grade4 + grade5;
+
+    alert("亲,您的总成绩是：" + grade + "分！");
     document.getElementById("总分").innerHTML = grade;
     document.getElementById("总分").style.color = "red";
 }
