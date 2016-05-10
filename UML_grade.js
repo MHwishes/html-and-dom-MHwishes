@@ -71,10 +71,10 @@ function buildSingleChoiceGrade() {
     var grade = 0;
     var information = document.form2;
 
-    if (buildSingleAnswer(information.answer1) === 'B') {
+    if (buildSingleAnswer(information.singleChoice1) === 'B') {
         grade += 2;
     }
-    if (buildSingleAnswer(information.answer2) === 'A') {
+    if (buildSingleAnswer(information.singleChoice2) === 'A') {
         grade += 2;
     }
 
@@ -94,8 +94,8 @@ function buildMultipleAnswers(answers) {
 
 function buildMultipleChoiceGrade() {
     var grade = 0;
-    var answer3 = document.getElementsByName("answer3");
-    var answer4 = document.getElementsByName("answer4");
+    var answer3 = document.getElementsByName("multipleChoice1");
+    var answer4 = document.getElementsByName("multipleChoice2");
 
     if (buildMultipleAnswers(answer3) === 'ABD') {
         grade += 2;
@@ -109,8 +109,8 @@ function buildMultipleChoiceGrade() {
 
 function buildJudgmentGrade() {
     var grade = 0;
-    var radio1 = document.getElementsByName("panswer1");
-    var radio2 = document.getElementsByName("panswer2");
+    var radio1 = document.getElementsByName("judge1");
+    var radio2 = document.getElementsByName("judge2");
 
     for (var i = 0; i < radio1.length; i++) {
         if (radio1[i].checked && radio1[i].value === 'wrong') {
