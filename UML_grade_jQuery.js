@@ -128,6 +128,6 @@ function buildTotalGrade(grade1, grade2, grade3, grade4, grade5) {
     var grade = grade1 + grade2 + grade3 + grade4 + grade5;
 
     alert("亲,您的总成绩是：" + grade + "分！");
-    document.getElementById("总分").innerHTML = grade;
-    document.getElementById("总分").style.color = "red";
+    $("#总分").val(grade);
+    $("#总分").css("color","red");
 }
